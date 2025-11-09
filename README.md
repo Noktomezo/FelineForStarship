@@ -6,9 +6,7 @@
 
 ## 📦 Installation
 
-1. Install Starship for your shell: [starship.rs](https://starship.rs/guide/#🚀-installation).
-
-2. Run the following command in your terminal:
+1. Run the following command in your terminal:
 ```shell
 # For Windows
 iwr -useb "https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship/setup.ps1" | iex
