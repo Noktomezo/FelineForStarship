@@ -11,14 +11,20 @@ A clean, vivid prompt preset for Starship. Built with high-contrast palettes ins
 
 1. Install Starship for your shell: [starship.rs](https://starship.rs/guide/#🚀-installation).
 
-2. Download the installer: [install.sh](install.sh) (Bash) or [install.ps1](install.ps1) (PowerShell).
+2. Run the following command in your terminal:
+```shell
+# For PowerShell
+iwr -useb "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/setup.ps1" | iex
 
-3. Run it and select a variant:
+# For Bash
+bash <(curl -fsSL "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/setup.sh")
+```
+2. Run it and select a variant:
    - 1: Default (Nerd Font) — `feline.toml`
    - 2: Emoji — `feline-emoji.toml`
    - 3: Plain text — `feline-plain-text.toml`
 
-4. Reload shell (don't needed actually) to see the result.
+3. Reload shell (don't needed actually) to see the result.
 
 > [!TIP]
 > (For PowerShell users) Sometimes you may not needed all the previous prompt information, so you can replace the previous-printed prompt with just `$` symbol. For setup see [Starship docs](https://starship.rs/advanced-config/#transientprompt-in-powershell).
