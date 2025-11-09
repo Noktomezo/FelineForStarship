@@ -5,7 +5,7 @@
 A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by [Catppuccin](https://github.com/catppuccin/starship), but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.
 
 <div align="center">
-  <img src="/assets/thumbnail.jpg" alt="Feline For Starship">
+  <img src="/assets/thumbnail.png" alt="Feline For Starship">
 </div>
 
 > [!IMPORTANT]
