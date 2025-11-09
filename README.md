@@ -1,12 +1,15 @@
-### 🌠🙀 Feline For [Starship](https://starship.rs/)
+<div align="center">
+  <h3>🌠🙀 Feline For <a href="https://starship.rs/">Starship</a></h1>
+</div>
 
 A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by Catppuccin, but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.
 
-Requires: Starship 1.0+
+> [!IMPORTANT]
+> Requires: Starship 1.0+
 
 ## Installation
 
-1. Install Starship: [starship.rs](https://starship.rs/guide/#🚀-installation).
+1. Install Starship for your shell: [starship.rs](https://starship.rs/guide/#🚀-installation).
 
 2. Download the installer: [install.sh](install.sh) (Bash) or [install.ps1](install.ps1) (PowerShell).
 
@@ -15,14 +18,7 @@ Requires: Starship 1.0+
    - 2: Emoji — `feline-emoji.toml`
    - 3: Plain text — `feline-plain-text.toml`
 
-   The script copies the config to `~/.config/starship.toml` (or `%USERPROFILE%\.config\starship.toml` on Windows).
-
-4. Add to your shell profile (e.g., `.zshrc`):
-   ```
-   eval "$(starship init zsh)"
-   ```
-
-5. Reload shell.
+4. Reload shell (don't needed actually) to see the result.
 
 ## Palettes
 

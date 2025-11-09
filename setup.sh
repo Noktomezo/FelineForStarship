@@ -2,7 +2,6 @@
 
 clear
 
-# Check if Starship is installed
 if command -v starship >/dev/null 2>&1; then
     echo -e "\033[1;32mStarship is installed. Proceeding with preset installation.\033[0m"
 else
@@ -12,7 +11,6 @@ else
     sleep 3
 fi
 
-# Copy the feline preset to the starship config directory
 if [ ! -d "$HOME/.config" ]; then
     echo -e "\033[1;31mStarship config directory does not exist\033[0m"
     echo -e "\033[1;33mCreating directory...\033[0m"
@@ -28,7 +26,6 @@ while [ "$valid" = false ]; do
     echo -ne "\n\033[1;34mEnter your choice (1-3): \033[0m"
     read -r choice
     
-    # Trim whitespace from input
     choice=$(echo "$choice" | xargs)
     
     if [ -z "$choice" ]; then
@@ -39,17 +36,17 @@ while [ "$valid" = false ]; do
     
     case $choice in
         1)
-            config_file="feline.toml"
+            config_file="themes/feline.toml"
             valid=true
             echo -e "\033[1;32mSelected: Default preset\033[0m"
         ;;
         2)
-            config_file="feline-emoji.toml"
+            config_file="themes/feline-emoji.toml"
             valid=true
             echo -e "\033[1;32mSelected: Emoji preset\033[0m"
         ;;
         3)
-            config_file="feline-plain-text.toml"
+            config_file="themes/feline-plain-text.toml"
             valid=true
             echo -e "\033[1;32mSelected: Plain text preset\033[0m"
         ;;
