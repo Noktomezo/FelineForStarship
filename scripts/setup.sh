@@ -45,17 +45,17 @@ while [ "$valid" = false ]; do
         1)
             url="$BASE_URL/themes/feline.toml"
             valid=true
-            echo -e "\033[1;32mSelected: Standard preset\033[0m"
+            echo -e "\033[1;32mSelected \"Standard preset\"\033[0m"
         ;;
         2)
             url="$BASE_URL/themes/feline-emoji.toml"
             valid=true
-            echo -e "\033[1;32mSelected: Emoji preset\033[0m"
+            echo -e "\033[1;32mSelected \"Emoji preset\"\033[0m"
         ;;
         3)
             url="$BASE_URL/themes/feline-plain-text.toml"
             valid=true
-            echo -e "\033[1;32mSelected: Plain text preset\033[0m"
+            echo -e "\033[1;32mSelected \"Plain text preset\"\033[0m"
         ;;
         *)
             clear
@@ -65,8 +65,9 @@ while [ "$valid" = false ]; do
 done
 
 {
-    echo -e "\n\033[1;33mDownloading and installing from $url...\033[0m"
-    curl -L "$url" -o "$CONFIG_DIR/starship.toml"
+    filename=$(basename "$url")
+    echo -e "\n\033[1;33mDownloading and installing from $filename...\033[0m"
+    curl -s -L "$url" -o "$CONFIG_DIR/starship.toml"
     echo -e "\033[1;32mInstallation complete! (Shell restart may be required)\033[0m"
     } || {
     echo -e "\n\033[1;31mError downloading preset: $($_.Exception.Message)\033[0m"

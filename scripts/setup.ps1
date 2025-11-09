@@ -39,17 +39,17 @@ while (-not $valid) {
     "1" {
       $url = "$BASE_URL/themes/feline.toml"
       $valid = $true
-      Write-Host "`e[1;32mSelected: Standard preset`e[0m"
+      Write-Host "`e[1;32mSelected `"Standard preset`"`e[0m"
     }
     "2" {
       $url = "$BASE_URL/themes/feline-emoji.toml"
       $valid = $true
-      Write-Host "`e[1;32mSelected: Emoji preset`e[0m"
+      Write-Host "`e[1;32mSelected `"Emoji preset`"`e[0m"
     }
     "3" {
       $url = "$BASE_URL/themes/feline-plain-text.toml"
       $valid = $true
-      Write-Host "`e[1;32mSelected: Plain text preset`e[0m"
+      Write-Host "`e[1;32mSelected `"Plain text preset`"`e[0m"
     }
     default {
       Clear-Host
@@ -58,7 +58,7 @@ while (-not $valid) {
   }
 }
 
-Write-Host "Downloading and installing from $url..." -ForegroundColor Yellow
+Write-Host "Downloading and installing $([System.IO.Path]::GetFileName($url))..." -ForegroundColor Yellow
 try {
   Invoke-WebRequest -Uri $url -OutFile "$CONFIG_DIR\starship.toml" -UseBasicParsing
   Write-Host "`e[1;32mInstallation complete! (Shell restart may be required)`e[0m"
