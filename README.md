@@ -1,15 +1,8 @@
 <div align="center">
   <h3>🌠🙀 Feline For <a href="https://starship.rs/">Starship</a></h1>
+  <p style="text-align: center;">A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by <a href="https://github.com/catppuccin/starship">Catppuccin</a>, but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.</p>
+  <img src="./assets/thumbnail.png" alt="Feline For Starship">
 </div>
-
-A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by [Catppuccin](https://github.com/catppuccin/starship), but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.
-
-<div align="center">
-  <img src="/assets/thumbnail.png" alt="Feline For Starship">
-</div>
-
-> [!IMPORTANT]
-> Requires: Starship 1.0+
 
 ## 📦 Installation
 
@@ -24,7 +17,7 @@ iwr -useb "https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship/setup.ps1" | 
 bash <(curl -fsSL "https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship/setup.sh")
 ```
 2. Run it and select a variant:
-   - 1: Default (Nerd Font) — `feline.toml`
+   - 1: Standard (Nerd Font) — `feline.toml`
    - 2: Emoji — `feline-emoji.toml`
    - 3: Plain text — `feline-plain-text.toml`
 
@@ -48,7 +41,7 @@ Edit `palette` key in `~/.config/starship.toml` to change it.
 
 ## 📝 Variants
 
-- **Default**: Nerd Font icons (e.g., 󰱒 for staged). Requires [Nerd Font](https://www.nerdfonts.com/).
+- **Standard**: Nerd Font icons (e.g., 󰱒 for staged). Requires [Nerd Font](https://www.nerdfonts.com/).
 - **Emoji**: Unicode emojis (e.g., ✅ for staged).
 - **Plain text**: ASCII/Unicode (e.g., + for staged).
 

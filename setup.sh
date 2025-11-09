@@ -20,7 +20,7 @@ fi
 valid=false
 while [ "$valid" = false ]; do
     echo -e "\n\033[1;34mSelect preset to install:\033[0m"
-    echo -e "[1] \033[1;34mDefault preset (feline.toml)\033[0m"
+    echo -e "[1] \033[1;34mStandard preset (feline.toml)\033[0m"
     echo -e "[2] \033[1;34mEmoji preset (feline-emoji.toml)\033[0m"
     echo -e "[3] \033[1;34mPlain text preset (feline-plain-text.toml)\033[0m"
     echo -ne "\n\033[1;34mEnter your choice (1-3): \033[0m"
@@ -38,7 +38,7 @@ while [ "$valid" = false ]; do
         1)
             config_file="themes/feline.toml"
             valid=true
-            echo -e "\033[1;32mSelected: Default preset\033[0m"
+            echo -e "\033[1;32mSelected: Standard preset\033[0m"
         ;;
         2)
             config_file="themes/feline-emoji.toml"
