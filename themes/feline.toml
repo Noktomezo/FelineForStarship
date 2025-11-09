@@ -7,8 +7,8 @@ format = "\\[$directory$git_branch$git_status\\]$character"
 palette = 'vivid_sunset'
 
 [directory]
-truncation_symbol = "\uf07c "
-truncation_length = 8
+truncation_symbol = " "
+truncation_length = 1
 truncate_to_repo = true
 style = "fg:frostbite"
 format = "[$path]($style)"
@@ -23,7 +23,7 @@ format = "$all_status$ahead_behind"
 conflicted = " | [󰄱 $count](fg:indigo_vortex)"
 ahead = " | [⇡ $count](fg:indigo_vortex)"
 behind = " | [⇣ $count](fg:indigo_vortex)"
-diverged = " | [⇡ $ahead_count / ⇣ $behind_count](fg:indigo_vortex)"
+diverged = " | [⇕: ⇡ $ahead_count / ⇣ $behind_count](fg:indigo_vortex)"
 untracked = " | [󰞋 $count](fg:indigo_vortex)"
 stashed = " | [󰒲 $count](fg:indigo_vortex)"
 modified = " | [󰏫 $count](fg:indigo_vortex)"

@@ -7,7 +7,7 @@ palette = 'vivid_sunset'
 
 [directory]
 truncation_symbol = ".../"
-truncation_length = 8
+truncation_length = 1
 truncate_to_repo = true
 style = "fg:frostbite"
 format = "[$path]($style)"

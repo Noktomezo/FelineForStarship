@@ -4,10 +4,14 @@
 
 A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by [Catppuccin](https://github.com/catppuccin/starship), but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.
 
+<div align="center">
+  <img src="/assets/thumbnail.jpg" alt="Feline For Starship">
+</div>
+
 > [!IMPORTANT]
 > Requires: Starship 1.0+
 
-## Installation
+## 📦 Installation
 
 1. Install Starship for your shell: [starship.rs](https://starship.rs/guide/#🚀-installation).
 
@@ -29,7 +33,7 @@ bash <(curl -fsSL "https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship/setup
 > [!TIP]
 > (For PowerShell users) Sometimes you may not needed all the previous prompt information, so you can replace the previous-printed prompt with just `$` symbol. For setup see [Starship docs](https://starship.rs/advanced-config/#transientprompt-in-powershell).
 
-## Palettes
+## 🎨 Palettes
 
 Four schemes with consistent keys (e.g., `goldenspark` for branches, `lime_zest` for success). Define at the top of your config.
 
@@ -42,7 +46,7 @@ Four schemes with consistent keys (e.g., `goldenspark` for branches, `lime_zest`
 
 Edit `palette` key in `~/.config/starship.toml` to change it.
 
-## Variants
+## 📝 Variants
 
 - **Default**: Nerd Font icons (e.g., 󰱒 for staged). Requires [Nerd Font](https://www.nerdfonts.com/).
 - **Emoji**: Unicode emojis (e.g., ✅ for staged).
@@ -50,6 +54,6 @@ Edit `palette` key in `~/.config/starship.toml` to change it.
 
 All include directory truncation, git branch/status, and vim support.
 
-## License
+## 📜 License
 
 MIT. See [LICENSE](LICENSE).

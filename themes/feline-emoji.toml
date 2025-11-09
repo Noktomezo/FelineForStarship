@@ -7,7 +7,7 @@ palette = 'vivid_sunset'
 
 [directory]
 truncation_symbol = "📁 "
-truncation_length = 8
+truncation_length = 1
 truncate_to_repo = true
 style = "fg:frostbite"
 format = "[$path]($style)"
@@ -25,7 +25,7 @@ behind = " | [⬇️ $count](fg:indigo_vortex)"
 diverged = " | [🔀: 🆙$ahead_count / ⬇️$behind_count](fg:indigo_vortex)"
 untracked = " | [❓ $count](fg:indigo_vortex)"
 stashed = " | [📦 $count](fg:indigo_vortex)"
-modified = " | [✏️ $count](fg:indigo_vortex)"
+modified = " | [✏️  $count](fg:indigo_vortex)"
 staged = " | [✅ $count](fg:indigo_vortex)"
 renamed = " | [🔄 $count](fg:indigo_vortex)"
 deleted = " | [🗑️ $count](fg:indigo_vortex)"
