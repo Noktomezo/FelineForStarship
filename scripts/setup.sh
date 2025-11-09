@@ -3,6 +3,7 @@
 clear
 
 BASE_URL="https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship/"
+CONFIG_DIR="$HOME/.config"
 
 if command -v starship >/dev/null 2>&1; then
     echo -e "\033[1;32mStarship is installed. Proceeding with preset installation.\033[0m"
@@ -13,10 +14,10 @@ else
     sleep 3
 fi
 
-if [ ! -d "$HOME/.config" ]; then
+if [ ! -d "$CONFIG_DIR" ]; then
     echo -e "\033[1;31mStarship config directory does not exist\033[0m"
     echo -e "\033[1;33mCreating directory...\033[0m"
-    mkdir -p "$HOME/.config"
+    mkdir -p "$CONFIG_DIR"
 fi
 
 # Get the directory where this script is located
@@ -65,7 +66,7 @@ done
 
 {
     echo -e "\n\033[1;33mDownloading and installing from $url...\033[0m"
-    curl -L "$url" -o "$HOME/.config/starship.toml"
+    curl -L "$url" -o "$CONFIG_DIR/starship.toml"
     echo -e "\033[1;32mInstallation complete! (Shell restart may be required)\033[0m"
     } || {
     echo -e "\n\033[1;31mError downloading preset: $($_.Exception.Message)\033[0m"

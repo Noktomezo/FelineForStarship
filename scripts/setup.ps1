@@ -1,6 +1,7 @@
 Clear-Host
 
 $BASE_URL = "https://cdn.jsdelivr.net/gh/Noktomezo/FelineForStarship@main"
+$CONFIG_DIR = "$HOME\.config"
 
 if (Get-Command starship -ErrorAction SilentlyContinue) {
   Write-Host "`e[1;32mStarship is installed. Proceeding with preset installation.`e[0m"
@@ -12,15 +13,11 @@ else {
   Start-Sleep -Seconds 3
 }
 
-$configDir = "$HOME\.config"
-if (-not (Test-Path $configDir)) {
+if (-not (Test-Path $CONFIG_DIR)) {
   Write-Host "`e[1;31mStarship config directory does not exist`e[0m"
   Write-Host "`e[1;33mCreating directory...`e[0m`n"
-  New-Item -Path $configDir -ItemType Directory -Force | Out-Null
+  New-Item -Path $CONFIG_DIR -ItemType Directory -Force | Out-Null
 }
-
-$scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
-$themesPath = Join-Path $scriptPath "..\themes"
 
 $valid = $false
 while (-not $valid) {
