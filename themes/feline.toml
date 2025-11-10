@@ -1,10 +1,10 @@
 # Starship Feline Preset (v0.1.0; Nerd Font Version)
-# Requires a Nerd Font (preferably with 'Propo' variant) to be installed
+# Requires a Nerd Font (preferably with "Propo" variant) to be installed
 
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
 
 format = "\\[$directory$git_branch$git_status\\]$character"
-palette = 'vivid_sunset'
+palette = "vivid_sunset"
 add_newline = false
 
 [directory]
@@ -17,7 +17,7 @@ format = "[$path]($style)"
 [git_branch]
 symbol = ""
 style = "fg:goldenspark"
-format = ' | [[$symbol $branch](fg:goldenspark)]($style)'
+format = " | [[$symbol $branch](fg:goldenspark)]($style)"
 
 [git_status]
 format = "$all_status$ahead_behind"
@@ -34,12 +34,12 @@ deleted = " | [󰍵 $count](fg:indigo_vortex)"
 
 [character]
 disabled = false
-success_symbol = '[\$](bold fg:lime_zest)'
-error_symbol = '[\$](bold fg:crimson_tide)'
-vimcmd_symbol = '[\$](bold fg:lime_zest)'
-vimcmd_replace_one_symbol = '[\$](bold fg:amethyst_glow)'
-vimcmd_replace_symbol = '[\$](bold fg:amethyst_glow)'
-vimcmd_visual_symbol = '[\$](bold fg:goldenspark)'
+success_symbol = "[\\$](bold fg:lime_zest)"
+error_symbol = "[\\$](bold fg:crimson_tide)"
+vimcmd_symbol = "[\\$](bold fg:lime_zest)"
+vimcmd_replace_one_symbol = "[\\$](bold fg:amethyst_glow)"
+vimcmd_replace_symbol = "[\\$](bold fg:amethyst_glow)"
+vimcmd_visual_symbol = "[\\$](bold fg:goldenspark)"
 
 [palettes.vivid_sunset]
 whisper_petal = "#ffccdd"

@@ -1,19 +1,19 @@
 <div align="center">
   <h3>🌠🙀 Feline For <a href="https://starship.rs/">Starship</a></h1>
   <p style="text-align: center;">A clean, vivid prompt preset for Starship. Built with high-contrast palettes inspired by <a href="https://github.com/catppuccin/starship">Catppuccin</a>, but more compact and vibrant. Provides three variants: Nerd Font icons, emojis, or plain text.</p>
-  <img src="./assets/thumbnail.png" alt="Feline For Starship">
+  <img src="./assets/thumbnail.svg" alt="Feline For Starship">
 </div>
 
 ## 📦 Installation
 
-1. Run the following command in terminal
+1. Run the following command in terminal:
 
-Windows:
+For Windows:
 ```powershell
 iwr -useb "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/scripts/setup.ps1" | iex
 ```
 
-Linux and macOS:
+For Linux and macOS:
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/scripts/setup.sh")
 ```
