@@ -7,14 +7,11 @@
 ## 📦 Installation
 
 1. Run the following command in terminal:
-
-For Windows:
-```powershell
+```shell
+# For Windows
 iwr -useb "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/scripts/setup.ps1" | iex
-```
 
-For Linux and macOS:
-```bash
+# For Linux and macOS
 bash <(curl -fsSL "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main/scripts/setup.sh")
 ```
 
@@ -30,7 +27,7 @@ bash <(curl -fsSL "https://raw.githubusercontent.com/Noktomezo/FelineForStarship
 
 ## 🎨 Palettes
 
-Four schemes with consistent keys (e.g., `goldenspark` for branches, `lime_zest` for success). Define at the top of your config.
+To change palette, edit `palette` key in `~/.config/starship.toml`.
 
 | Palette       | Base Theme      |
 | ------------- | --------------- |
@@ -39,13 +36,11 @@ Four schemes with consistent keys (e.g., `goldenspark` for branches, `lime_zest`
 | radiant_storm | Thunder energy  |
 | blaze_echo    | Fiery afterglow |
 
-Edit `palette` key in `~/.config/starship.toml` to change it.
-
 ## 📝 Variants
 
-- **Standard**: Nerd Font icons (e.g., 󰱒 for staged). Requires [Nerd Font](https://www.nerdfonts.com/).
-- **Emoji**: Unicode emojis (e.g., ✅ for staged).
-- **Plain text**: ASCII/Unicode (e.g., + for staged).
+- **Standard**: Nerd Font icons (e.g., 󰱒 for staged, 󰏫 for modified, ⇡ for ahead).
+- **Emoji**: Unicode emojis (e.g., ✅ for staged, ✏️ for modified, ⬆️ for ahead).
+- **Plain text**: ASCII/Unicode (e.g., + for staged, ~ for modified, > for ahead).
 
 All include directory truncation, git branch/status, and vim support.
 

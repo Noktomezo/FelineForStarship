@@ -22,7 +22,7 @@ if (-not (Test-Path $CONFIG_DIR)) {
 $valid = $false
 while (-not $valid) {
   Write-Host "`n`e[1;34mSelect preset to install:`e[0m"
-  Write-Host "`e[1;32m[1]`e[0m `e[1;34mStandard preset (feline.toml)`e[0m"
+  Write-Host "`e[1;32m[1]`e[0m `e[1;34mStandard preset (feline.toml; requires Nerd Font)`e[0m"
   Write-Host "`e[1;32m[2]`e[0m `e[1;34mEmoji preset (feline-emoji.toml)`e[0m"
   Write-Host "`e[1;32m[3]`e[0m `e[1;34mPlain text preset (feline-plain-text.toml)`e[0m"
   $choice = Read-Host "`n`e[1;34mEnter your choice (1-3)`e[0m"
