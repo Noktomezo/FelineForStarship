@@ -49,6 +49,9 @@ Edit `palette` key in `~/.config/starship.toml` to change it.
 
 All include directory truncation, git branch/status, and vim support.
 
-## 📜 License
+&nbsp;
 
-MIT. See [LICENSE](LICENSE).
+<div align="center">
+  <img src="./assets/heartbeat.svg" alt="Feline For Starship" width="600px">
+  <p>Made with 💜. Published under <a href="LICENSE">MIT license</a>.</p>
+</div>
