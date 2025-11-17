@@ -4,7 +4,7 @@
   <img src="./assets/thumbnail-alt.svg" alt="Feline For Starship" width="400px">
 </div>
 
-##  Installation
+## 📦 Installation
 
 1. Run the following command in terminal:
 ```shell
@@ -25,7 +25,7 @@ bash <(curl -fsSL "https://dub.sh/feline")
 > [!TIP]
 > (For PowerShell users) Sometimes you may not needed all the previous prompt information, so you can replace the previous-printed prompt with just `$` symbol. For setup see [Starship docs](https://starship.rs/advanced-config/#transientprompt-in-powershell).
 
-##  Palettes
+## 🎨 Palettes
 
 To change palette, edit `palette` key in `~/.config/starship.toml` to one of the following:
 - `vivid_sunset`
@@ -33,7 +33,7 @@ To change palette, edit `palette` key in `~/.config/starship.toml` to one of the
 - `radiant_storm`
 - `blaze_echo`
 
-##  Variants
+## 📚 Variants
 
 - **Standard**: Nerd Font icons (e.g., 󰱒 for staged, 󰏫 for modified,  for ahead).
 - **Emoji**: Unicode emojis (e.g.,  for staged,  for modified,  for ahead).
@@ -45,5 +45,5 @@ All include directory truncation, git branch/status, and vim support.
 
 <div align="center">
   <img src="./assets/heartbeat.svg" alt="Feline For Starship" width="600px">
-  <p>Made with . Published under <a href="LICENSE">MIT license</a>.</p>
+  <p>Made with 💜. Published under <a href="LICENSE">MIT license</a>.</p>
 </div>
