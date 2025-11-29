@@ -1,7 +1,7 @@
 <div align="center">
-  <h3>🙀🌠 Feline For <a href="https://starship.rs/">Starship</a></h1>
+  <h3>🙀🌠 Nectar For <a href="https://starship.rs/">Starship</a></h1>
   <p style="text-align: center;">A clean, vivid prompt preset for Starship, rethinking the classic Linux default terminal prompt - but extended for modern workflows. It delivers high-contrast readability in a compact, vibrant layout, showing all the project info in comprehensive format. Provides three (project affection indicator) variants: Nerd Font icons, emojis, or plain text.</p>
-  <img src="./assets/thumbnail-alt.svg" alt="Feline For Starship" width="400px">
+  <img src="./assets/thumbnail-alt.svg" alt="Nectar For Starship" width="400px">
 </div>
 
 ## 📦 Installation
@@ -9,16 +9,16 @@
 1. Run the following command in terminal:
 ```shell
 # For Windows (PowerShell)
-irm "https://dub.sh/feline" | iex
+irm "https://dub.sh/nectar" | iex
 
 # For Linux and macOS (Bash)
-bash <(curl -fsSL "https://dub.sh/feline")
+bash <(curl -fsSL "https://dub.sh/nectar")
 ```
 
 2. Select a prompted variant:
-- 1: Standard (Nerd Font) — `feline.toml`
-- 2: Emoji — `feline-emoji.toml`
-- 3: Plain text — `feline-plain-text.toml`
+- 1: Standard (Nerd Font) — `nectar.toml`
+- 2: Emoji — `nectar-emoji.toml`
+- 3: Plain text — `nectar-plain-text.toml`
 
 3. Reload shell (don't needed actually) to see the result.
 
@@ -28,10 +28,10 @@ bash <(curl -fsSL "https://dub.sh/feline")
 ## 🎨 Palettes
 
 To change palette, edit `palette` key in `~/.config/starship.toml` to one of the following:
-- `vivid_sunset`
-- `electric_dawn`
-- `radiant_storm`
-- `blaze_echo`
+- `mellow`
+- `lush`
+- `fervor` 
+- `blaze`
 
 ## 📚 Variants
 
@@ -44,6 +44,6 @@ All include directory truncation, git branch/status, and vim support.
 &nbsp;
 
 <div align="center">
-  <img src="./assets/heartbeat.svg" alt="Feline For Starship" width="600px">
+  <img src="./assets/heartbeat.svg" alt="Nectar For Starship" width="600px">
   <p>Made with 💜. Published under <a href="LICENSE">MIT license</a>.</p>
 </div>

@@ -1,6 +1,6 @@
 Clear-Host
 
-$BASE_URL = "https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main"
+$BASE_URL = "https://raw.githubusercontent.com/Noktomezo/NectarForStarship/refs/heads/main"
 $CONFIG_DIR = "$HOME\.config"
 
 $RED = "$($PSStyle.Foreground.Red)$($PSStyle.Bold)"
@@ -43,17 +43,17 @@ while (-not $valid) {
 
   switch ($choice) {
     "1" {
-      $url = "$BASE_URL/themes/feline.toml"
+      $url = "$BASE_URL/themes/nectar.toml"
       $valid = $true
       Write-Host "$($GREEN)Selected `"Standard preset`"$($RESET)"
     }
     "2" {
-      $url = "$BASE_URL/themes/feline-emoji.toml"
+      $url = "$BASE_URL/themes/nectar-emoji.toml"
       $valid = $true
       Write-Host "$($GREEN)Selected `"Emoji preset`"$($RESET)"
     }
     "3" {
-      $url = "$BASE_URL/themes/feline-plain-text.toml"
+      $url = "$BASE_URL/themes/nectar-plain-text.toml"
       $valid = $true
       Write-Host "$($GREEN)Selected `"Plain text preset`"$($RESET)"
     }

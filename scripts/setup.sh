@@ -2,7 +2,7 @@
 
 clear
 
-BASE_URL="https://raw.githubusercontent.com/Noktomezo/FelineForStarship/refs/heads/main"
+BASE_URL="https://raw.githubusercontent.com/Noktomezo/NectarForStarship/refs/heads/main"
 CONFIG_DIR="$HOME/.config"
 
 RED="\033[1;31m"
@@ -37,28 +37,28 @@ while [ "$valid" = false ]; do
     echo -e "${GREEN}[3]${RESET} ${BOLD}Plain text preset${RESET}"
     echo -ne "\n${BOLD}Enter your choice (${GREEN}1-3${RESET}): ${RESET}"
     read -r choice
-    
+
     choice=$(echo "$choice" | xargs)
-    
+
     if [ -z "$choice" ]; then
         clear
         echo -e "${RED}No input provided. Please enter 1, 2, or 3.${RESET}"
         continue
     fi
-    
+
     case $choice in
         1)
-            url="$BASE_URL/themes/feline.toml"
+            url="$BASE_URL/themes/nectar.toml"
             valid=true
             echo -e "${GREEN}Selected \"Standard preset\"${RESET}"
         ;;
         2)
-            url="$BASE_URL/themes/feline-emoji.toml"
+            url="$BASE_URL/themes/nectar-emoji.toml"
             valid=true
             echo -e "${GREEN}Selected \"Emoji preset\"${RESET}"
         ;;
         3)
-            url="$BASE_URL/themes/feline-plain-text.toml"
+            url="$BASE_URL/themes/nectar-plain-text.toml"
             valid=true
             echo -e "${GREEN}Selected \"Plain text preset\"${RESET}"
         ;;

@@ -1,42 +1,42 @@
-# Starship Feline Preset (v0.1.0; Plain Text Version)
-# Works in any terminal without Nerd Fonts
+# Nectar Preset for Starship (v0.1.0; Emoji Version)
+# Uses standard emojis instead of Nerd Fonts (works in most terminals)
 
 "$schema" = "https://starship.rs/config-schema.json"
 
 # Available palettes:
-# - electric_dawn
-# - radiant_storm
-# - blaze_echo
-# - vivid_sunset
-palette = "vivid_sunset"
+# - mellow
+# - lush
+# - fervor
+# - blaze
+palette = "mellow"
 
 format = "\\[$directory$git_branch$git_status\\]$character"
 add_newline = false
 
 [directory]
-truncation_symbol = "…/"
+truncation_symbol = "📁 "
 truncation_length = 1
 truncate_to_repo = true
 style = "fg:frostbite"
 format = "[$path]($style)"
 
 [git_branch]
-symbol = "⌥ "
+symbol = "🐱"
 style = "fg:goldenspark"
-format = " | [[$symbol$branch](fg:goldenspark)]($style)"
+format = " | [[$symbol $branch](fg:goldenspark)]($style)"
 
 [git_status]
 format = "$all_status$ahead_behind"
-conflicted = " | [↕ $count](fg:indigo_vortex)"
-ahead = " | [↑ $count](fg:indigo_vortex)"
-behind = " | [↓ $count](fg:indigo_vortex)"
-diverged = " | [↑ $ahead_count ↓ $behind_count](fg:indigo_vortex)"
-untracked = " | [∅ $count](fg:indigo_vortex)"
-stashed = " | [≡ $count](fg:indigo_vortex)"
-modified = " | [* $count](fg:indigo_vortex)"
-staged = " | [+ $count](fg:indigo_vortex)"
-renamed = " | [→ $count](fg:indigo_vortex)"
-deleted = " | [✗ $count](fg:indigo_vortex)"
+conflicted = " | [⚡ $count](fg:indigo_vortex)"
+ahead = " | [⬆️ $count](fg:indigo_vortex)"
+behind = " | [⬇️ $count](fg:indigo_vortex)"
+diverged = " | [⬆️ $ahead_count / ⬇️ $behind_count](fg:indigo_vortex)"
+untracked = " | [❓ $count](fg:indigo_vortex)"
+stashed = " | [📦 $count](fg:indigo_vortex)"
+modified = " | [✏️  $count](fg:indigo_vortex)"
+staged = " | [✅ $count](fg:indigo_vortex)"
+renamed = " | [🔄 $count](fg:indigo_vortex)"
+deleted = " | [🗑️ $count](fg:indigo_vortex)"
 
 [character]
 disabled = false
@@ -47,7 +47,7 @@ vimcmd_replace_one_symbol = "[\\$](bold fg:amethyst_glow)"
 vimcmd_replace_symbol = "[\\$](bold fg:amethyst_glow)"
 vimcmd_visual_symbol = "[\\$](bold fg:goldenspark)"
 
-[palettes.vivid_sunset]
+[palettes.mellow]
 whisper_petal = "#ffccdd"
 ember_whirl = "#ffaa99"
 fuchsia_dream = "#ff99ee"
@@ -75,7 +75,7 @@ base = "#222222"
 mantle = "#111111"
 crust = "#000000"
 
-[palettes.electric_dawn]
+[palettes.lush]
 whisper_petal = "#ffddee"
 ember_whirl = "#ffbbcc"
 fuchsia_dream = "#ff88ff"
@@ -103,7 +103,7 @@ base = "#1a1a1a"
 mantle = "#0f0f0f"
 crust = "#050505"
 
-[palettes.radiant_storm]
+[palettes.fervor]
 whisper_petal = "#ffddff"
 ember_whirl = "#ffccbb"
 fuchsia_dream = "#ff77ff"
@@ -131,7 +131,7 @@ base = "#151515"
 mantle = "#0a0a0a"
 crust = "#000000"
 
-[palettes.blaze_echo]
+[palettes.blaze]
 whisper_petal = "#ffeeff"
 ember_whirl = "#ffddcc"
 fuchsia_dream = "#ff66ff"
