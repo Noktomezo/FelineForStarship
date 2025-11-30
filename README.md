@@ -34,8 +34,14 @@ To change palette, edit `palette` key in `~/.config/starship.toml` to one of the
 
 ## 📚 Variants
 
-- **Standard**: Nerd Font icons (e.g., 󰱒 for staged, 󰏫 for modified,  for ahead).
-- **Plain text**: ASCII/Unicode (e.g., + for staged, * for modified, ↑ for ahead).
+<ul>
+  <li>
+  <strong>Standard</strong>: Nerd Font icons (e.g., <img src="./assets/staged.svg" width="1em" height="1em" style="vertical-align:-0.125em;"> for staged, <img src="./assets/modified.svg" width="1em" height="1em" style="vertical-align:-0.125em;"> for modified, <img src="./assets/ahead.svg" width="1em" height="1em" style="vertical-align:-0.125em;"> for ahead).
+  </li>
+  <li>
+  <strong>Plain text</strong>: ASCII/Unicode (e.g., + for staged, * for modified, ↑ for ahead).
+  </li>
+</ul>
 
 All include directory truncation, git branch/status, and vim support.
 

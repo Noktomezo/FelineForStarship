@@ -1,4 +1,4 @@
-# Nectar Preset for Starship (v0.1.0; Plain Text Version)
+# Nectar Preset for Starship (v1.0.0; Plain Text Version)
 # Works in any terminal without Nerd Fonts
 
 "$schema" = "https://starship.rs/config-schema.json"
