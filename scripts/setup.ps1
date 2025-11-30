@@ -29,15 +29,14 @@ $valid = $false
 while (-not $valid) {
   Write-Host "`n$($BOLD)Select preset to install:$($RESET)"
   Write-Host "$($GREEN)[1]$($RESET) $($BOLD)Standard preset ($($YELLOW)Requires Nerd Font$($RESET))$($RESET)"
-  Write-Host "$($GREEN)[2]$($RESET) $($BOLD)Emoji preset$($RESET)"
-  Write-Host "$($GREEN)[3]$($RESET) $($BOLD)Plain text preset$($RESET)"
-  $choice = Read-Host "`n$($BOLD)Enter your choice ($($GREEN)1-3$($RESET))"
+  Write-Host "$($GREEN)[2]$($RESET) $($BOLD)Plain text preset$($RESET)"
+  $choice = Read-Host "`n$($BOLD)Enter your choice ($($GREEN)1 or 2$($RESET))"
 
   $choice = $choice.Trim()
 
   if ([string]::IsNullOrEmpty($choice)) {
     Clear-Host
-    Write-Host "$($RED)No input provided. Please enter 1, 2, or 3.$($RESET)"
+    Write-Host "$($RED)No input provided. Please enter 1 or 2.$($RESET)"
     continue
   }
 
@@ -48,18 +47,13 @@ while (-not $valid) {
       Write-Host "$($GREEN)Selected `"Standard preset`"$($RESET)"
     }
     "2" {
-      $url = "$BASE_URL/themes/nectar-emoji.toml"
-      $valid = $true
-      Write-Host "$($GREEN)Selected `"Emoji preset`"$($RESET)"
-    }
-    "3" {
       $url = "$BASE_URL/themes/nectar-plain-text.toml"
       $valid = $true
       Write-Host "$($GREEN)Selected `"Plain text preset`"$($RESET)"
     }
     default {
       Clear-Host
-      Write-Host "$($RED)Invalid choice '$choice'. Please enter 1, 2, or 3.$($RESET)"
+      Write-Host "$($RED)Invalid choice '$choice'. Please enter 1 or 2.$($RESET)"
     }
   }
 }

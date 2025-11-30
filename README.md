@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./assets/thumbnail-alt-2.svg" alt="Nectar For Starship" width="100%">
   <h3>🍯✨🚀 Nectar For <a href="https://starship.rs/">Starship</a></h1>
-  <p style="text-align: center;">A clean, vivid prompt preset for Starship, rethinking the classic Linux default terminal prompt - but extended for modern workflows. It delivers high-contrast readability in a compact, vibrant layout, showing all the project info in comprehensive format. Provides three (project affection indicator) variants: Nerd Font icons, emojis, or plain text.</p>
+  <p style="text-align: center;">A clean, vivid prompt preset for Starship, rethinking the classic Linux default terminal prompt - but extended for modern workflows. It delivers high-contrast readability in a compact, vibrant layout, showing all the project info in comprehensive format. Provides two (project affection indicator) variants: Nerd Font icons or plain text.</p>
 </div>
 
 ## 📦 Installation
@@ -17,8 +17,7 @@ bash <(curl -fsSL "https://dub.sh/nectar")
 
 2. Select a prompted variant:
 - 1: Standard (Nerd Font) — `nectar.toml`
-- 2: Emoji — `nectar-emoji.toml`
-- 3: Plain text — `nectar-plain-text.toml`
+- 2: Plain text (Unicode Symbols) — `nectar-plain-text.toml`
 
 3. Reload shell (don't needed actually) to see the result.
 
@@ -36,7 +35,6 @@ To change palette, edit `palette` key in `~/.config/starship.toml` to one of the
 ## 📚 Variants
 
 - **Standard**: Nerd Font icons (e.g., 󰱒 for staged, 󰏫 for modified,  for ahead).
-- **Emoji**: Unicode emojis (e.g., ✅ for staged, ✏️ for modified, ⬆️ for ahead).
 - **Plain text**: ASCII/Unicode (e.g., + for staged, * for modified, ↑ for ahead).
 
 All include directory truncation, git branch/status, and vim support.

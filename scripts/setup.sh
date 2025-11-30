@@ -26,23 +26,19 @@ if [ ! -d "$CONFIG_DIR" ]; then
     mkdir -p "$CONFIG_DIR"
 fi
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-THEMES_DIR="$SCRIPT_DIR/../themes"
-
 valid=false
 while [ "$valid" = false ]; do
     echo -e "\n${BOLD}Select preset to install:${RESET}"
     echo -e "${GREEN}[1]${RESET} ${BOLD}Standard preset (${YELLOW}Requires Nerd Font${RESET})${RESET}"
-    echo -e "${GREEN}[2]${RESET} ${BOLD}Emoji preset${RESET}"
-    echo -e "${GREEN}[3]${RESET} ${BOLD}Plain text preset${RESET}"
-    echo -ne "\n${BOLD}Enter your choice (${GREEN}1-3${RESET}): ${RESET}"
+    echo -e "${GREEN}[2]${RESET} ${BOLD}Plain text preset${RESET}"
+    echo -ne "\n${BOLD}Enter your choice (${GREEN}1 or 2${RESET}): ${RESET}"
     read -r choice
 
     choice=$(echo "$choice" | xargs)
 
     if [ -z "$choice" ]; then
         clear
-        echo -e "${RED}No input provided. Please enter 1, 2, or 3.${RESET}"
+        echo -e "${RED}No input provided. Please enter 1 or 2.${RESET}"
         continue
     fi
 
@@ -53,18 +49,13 @@ while [ "$valid" = false ]; do
             echo -e "${GREEN}Selected \"Standard preset\"${RESET}"
         ;;
         2)
-            url="$BASE_URL/themes/nectar-emoji.toml"
-            valid=true
-            echo -e "${GREEN}Selected \"Emoji preset\"${RESET}"
-        ;;
-        3)
             url="$BASE_URL/themes/nectar-plain-text.toml"
             valid=true
             echo -e "${GREEN}Selected \"Plain text preset\"${RESET}"
         ;;
         *)
             clear
-            echo -e "${RED}Invalid choice '$choice'. Please enter 1, 2, or 3.${RESET}"
+            echo -e "${RED}Invalid choice '$choice'. Please enter 1 or 2.${RESET}"
         ;;
     esac
 done
