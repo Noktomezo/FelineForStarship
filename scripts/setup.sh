@@ -2,7 +2,7 @@
 
 clear
 
-BASE_URL="https://raw.githubusercontent.com/Noktomezo/NectarForStarship/refs/heads/main"
+BASE_URL="https://raw.githubusercontent.com/Noktomezo/CrampackForStarship/refs/heads/main"
 CONFIG_DIR="$HOME/.config"
 
 RED="\033[1;31m"
@@ -44,12 +44,12 @@ while [ "$valid" = false ]; do
 
     case $choice in
         1)
-            url="$BASE_URL/themes/nectar.toml"
+            url="$BASE_URL/themes/crampack.toml"
             valid=true
             echo -e "${GREEN}Selected \"Standard preset\"${RESET}"
         ;;
         2)
-            url="$BASE_URL/themes/nectar-plain-text.toml"
+            url="$BASE_URL/themes/crampack-plain-text.toml"
             valid=true
             echo -e "${GREEN}Selected \"Plain text preset\"${RESET}"
         ;;
